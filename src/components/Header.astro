@@ -1,0 +1,15 @@
+---
+import Content from "./Content.astro";
+import img1 from "../images/logo.svg";
+---
+
+<Content>
+    <header class="py-10 flex justify-between items-center font-raleway lg:max-w-7xl mx-auto">
+        <img class="w-36" src={img1.src} alt="">
+        <nav class="flex gap-5 text-pvdblue text-lg">
+            <a href="#">Features</a>
+            <a href="#">Team</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </header>
+</Content>

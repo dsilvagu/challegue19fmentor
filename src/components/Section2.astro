@@ -1,0 +1,24 @@
+---
+import Content from "./Content.astro";
+
+---
+
+<Content class="bg-pdblue text-[#FFFF]">
+    <div class="font-opens py-20 mx-auto lg:max-w-7xl flex flex-col lg:flex-row lg:gap-20 gap-5 ">
+        <article class="lg:w-1/2 text-plgblue flex flex-col gap-5 text-center lg:text-left">
+            <p class="font-semibold text-2xl">Get early access today</p>
+            <p class="text-sm">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        </article>
+        <div class="flex flex-col lg:mx-0 font-opens gap-4 lg:w-1/2  required" id="email">
+            <input type="email" placeholder="email@example.com" class="lg:w-full p-3 rounded-sm text-plgray  border-2 border-pmcyan invalid:border-[#EF5A6F]">
+            <button type="submit" class="transition duration-500 hover:bg-pbblue/50 lg:w-1/3 bg-pbblue text-[#FFFF] p-3 rounded-sm shadow-lg">Get Started For Free</button>
+        </div>
+    </div>
+</Content>
+
+
+<!--
+<input type="email" id="email" placeholder="Enter your email ..." class="lg:w-3/5 p-3 rounded-sm text-plgray border-2 border-pmcyan invalid:border-[#EF5A6F] required">
+               
+<button type="submit" class=" hover:bg-pbblue/50 lg:w-1/3 bg-pbblue text-[#FFFF] p-3 rounded-sm shadow-lg" onclick="test()">Get Started</button>
+-->

@@ -1,0 +1,8 @@
+---
+import '@fontsource-variable/raleway';
+import '@fontsource-variable/open-sans';
+const { class: className } = Astro.props
+---
+<section class={`${className} relative w-full mx-auto px-10 lg:px-20 `}>
+    <slot />
+</section>

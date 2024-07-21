@@ -1,0 +1,35 @@
+---
+import Content from "./Content.astro";
+import img1 from '../images/illustration-2.svg';
+import img2 from '../images/icon-arrow.svg';
+import img3 from '../images/icon-quotes.svg';
+import img4 from '../images/avatar-testimonial.jpg'
+---
+
+<Content class="bg-plgblue">
+    <div class="mx-auto lg:max-w-7xl pt-10 pb-20 flex flex-col lg:flex-row-reverse gap-10">
+        <img class="lg:w-1/2 object-contain" src={img1.src} alt="">
+        <div class="lg:w-1/2 flex flex-col justify-center gap-10">
+            <p class="text-xl lg:text-4xl text-center lg:text-left font-bold font-raleway text-pvdblue">Stay productive, wherever you are</p>
+            <p class="text-lg text-pdblue font-opens">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. <br> <br>Securelyshare files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+            <a class="flex justify-center items-center  w-max border-b py-1 text-sm font-opens gap-3 group border-pmcyan hover:border-pmcyan/50 transition duration-500" href="#">
+                <p class="text-sm text-pmcyan group-hover:text-pmcyan/50 transition duration-500">See how Fylo works </p>
+                <svg class="" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#3DA08F" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"/></g></svg>
+            </a>
+            <div class="mx-10 lg:mx-0 lg:w-3/5 bg-[#FFFF] rounded-sm text-pdblue shadow-l p-8 flex flex-col gap-3">
+                <img class="w-max" src={img3.src} alt="">
+                <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                <div class="text-xs flex gap-3 items-center font-opens">
+                    <img class="rounded-full size-10" src={img4.src} alt="">
+                    <ul>
+                        <li class="font-bold text-sm">Kyle Burton</li>
+                        <li>Founder & CEO, Huddle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</Content>
+
+
